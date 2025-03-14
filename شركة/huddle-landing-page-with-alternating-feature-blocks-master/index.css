@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
 
-body {
+body ,button{
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  font-weight: 500;
+}
+button{
+ background-color:  hsl(322, 100%, 66%);
 }
 
 h1,
 h2 {
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: (192, 100%, 9%);
 }
 
 img {
@@ -20,6 +26,11 @@ ul {
 
 p {
   line-height: 1.8;
+ color:  hsl(208, 11%, 55%);
+
+}
+.fott{
+  grid-template-columns: 35% auto auto 30%;
 }
 
 .attribution {
@@ -42,11 +53,17 @@ p {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+  body{
+    font-weight: 400;
+  }
 .section{
 
   background-image: url("./images/bg-hero-mobile.svg");
 
 
+} .fott{
+  grid-template-columns: auto;
 }}
+
 
